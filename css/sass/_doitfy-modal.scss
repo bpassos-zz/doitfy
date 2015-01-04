@@ -1,0 +1,65 @@
+$doitfy-modal-width: 600px;
+$doitfy-modal-height: 400px;
+
+.doitfy-modal {
+	position: absolute;
+	top: -100%;
+	left: 50%;
+	width: $doitfy-modal-width;
+	height: $doitfy-modal-height;
+	margin: (-($doitfy-modal-height/2)) 0 0 (-($doitfy-modal-width/2));
+	background: #fff;
+	z-index: 10;
+	transition: .3s all ease-out;
+	border-radius: 4px;
+	box-shadow: 0 0 6px 0 rgba(0,0,0,.3);
+}
+
+.doitfy-modal-is-open {
+	top: 50%;
+}
+
+.doitfy-modal-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,.5);
+	opacity: 0;
+	display: none;
+	transition: .4s opacity linear;
+}
+
+.doitfy-modal-overlay.is-shown {
+	opacity: 1;
+	display: block;
+}
+
+.doitfy-modal-header {
+	padding: 20px;
+	background: #B9ACCB;
+	border-radius: 4px 4px 0 0;
+}
+
+.doitfy-modal-body {
+	padding: 25px 20px 20px;
+	overflow: auto;
+	color: #555;
+
+	p {
+		line-height: 150%;
+		margin: 0 0 1em;
+	}
+}
+
+
+.doitfy-modal-title{ 
+	margin: 0;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.doitfy-modal-close {
+	float: right;
+}
