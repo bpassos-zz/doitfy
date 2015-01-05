@@ -1,13 +1,13 @@
-$doitfy-modal-width: 600px;
-$doitfy-modal-height: 400px;
+$doitfy-modal-width: 45%;
+$doitfy-modal-height: 200px;
 
 .doitfy-modal {
 	position: absolute;
 	top: -100%;
 	left: 50%;
 	width: $doitfy-modal-width;
-	height: $doitfy-modal-height;
-	margin: (-($doitfy-modal-height/2)) 0 0 (-($doitfy-modal-width/2));
+	min-height: $doitfy-modal-height;
+	margin: (-($doitfy-modal-height)) 0 0 (-($doitfy-modal-width/2));
 	background: #fff;
 	z-index: 10;
 	transition: .3s all ease-out;
