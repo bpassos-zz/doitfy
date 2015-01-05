@@ -21,7 +21,7 @@
     <div class="wrapper centered">
         <h1>A to-do list with a twist</h1>
         <div class="todo-wrapper">
-            <table>
+            <table id="todo-list-table">
                 <thead>
                     <tr>
                         <th class="checkbox">DONE!</th>
@@ -61,7 +61,22 @@
         <h2 class="doitfy-modal-title">Add Event</h2>
     </div>
     <div class="doitfy-modal-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sed, eveniet, odit recusandae facilis voluptate iste commodi eligendi amet molestiae corporis magnam facere et temporibus cumque molestias aperiam laborum tenetur.</p>
+        <p>Add your new todo item.</p>
+        <form id="add_event_form">
+            <div class="form-group">
+                <label for="add_task">Task</label>
+                <input type="text" class="form-element" id="add_task">
+            </div>
+            <div class="form-group">
+                <label for="add_date">Due date</label>
+                <input type="date" class="form-element" id="add_date">
+            </div>
+            
+            <div class="modal-button-pane">
+                <button type="submit" class="doitfy-modal-close button-cancel" id="add_event">cancel</button>
+                <button type="submit" class="button button-add" id="add_event">Add to to-do list</button>
+            </div>
+        </form>
     </div>
 </div>
 <div id="add-about-modal" class="doitfy-modal">
@@ -73,6 +88,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum sed, eveniet, odit recusandae facilis voluptate iste commodi eligendi amet molestiae corporis magnam facere et temporibus cumque molestias aperiam laborum tenetur.</p>
     </div>
 </div>
+<script src="js/main.js"></script>
 <script src="js/doitfy-modal.js"></script>
 <script>
 (function() {
